@@ -77,6 +77,8 @@ def load_data():
 
 df = load_data()
 
+
+
 # --------------------------------------------------------------------------------------------------
  
 
@@ -165,6 +167,11 @@ if page == "Overview":
     st.title("Dashboard Overview")
 
     st.subheader("📂 Dataset Overview")
+    st.markdown("""
+
+    The **Dataset** provides comprehensive data on video game sales, and user insights globally, including details such as the game's name, platform, year of release, genre, publisher, sales in different regions, developer, and age rating.
+
+    """)
     st.dataframe(filtered_df.head())
 
     st.divider()
