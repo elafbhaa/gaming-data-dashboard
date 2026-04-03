@@ -569,22 +569,23 @@ elif page == "Insights & Recommendations":
     st.markdown("""
 ### 🔍 Main Findings Insights
 
-- Sports game has the highest peak, reaching close to 80 million in global sales-confirming it as the most commercially dominant genre.
-- Action games dominate the global market with the Most Popular Genre.
-- Everyone rating reaches nearly 1200 million in global sales, making it the strongest genre- rating 
-- Nintendo publisher appear frequently among top-selling games.
-- Higher scores alone do not guarantee increased sales.
-- Video game sales were highest during 2005-2015.
-- The PS2 platform dominated global sales and game releases during its peak years, reflecting strong consumer demand across diverse genres.
+- Sports games reach the highest sales peaks.
+- Action games are the global market leader and the most popular genre.
+- The 'Everyone' rating achieves the highest global sales, making it the most commercially successful category.
+- Nintendo consistently ranks as a top-selling publisher..
+- High scores don't always mean high sales.
+- Video game sales reached their peak between 2005 and 2015.
+- The PS2 platform led the world in both sales and releases, proving that players wanted a wide variety of games.
 ---
         
 ### 💡Business Recommendations
 
-- Focus development on Action & Sports games.  
-- publishers should prioritize Sports and Action under family-friendly ratings while balancing with other genres to build reputation and loyalty. 
-- Improve game quality to increase user scores.
-- Target high-performing years trends.
-- Publishers and developers can learn from the PS2 era by focusing on broad genre diversity and accessible pricing strategies (contributed to its succes).
+- Focus development on Action & Sports games (since they are the most popular).  
+- Focus on "family-friendly" ratings to reach the biggest audience possible. 
+- Quality First: Better games get better reviews to increase user scores.
+- Target high-performing years trends (release your games during the busiest times of the year when people are buying the most).
+- Emulate the PS2 platform era's success by expanding game genres and adopting inclusive, budget-friendly pricing.
+
 """)
 
 
