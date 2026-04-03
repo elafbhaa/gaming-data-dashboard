@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-
+# re-style the multiselect tags to look more polished, with gradient colors.
 st.markdown("""
 <style>
 
@@ -321,6 +321,26 @@ elif page == "Analysis":
     # --------------------------------------------------------------------------------------------------
     # Bivariate Analysis
     with tab2:
+
+
+        st.subheader("🔢 Number of Games Released per Year with Trendline")
+
+        # Scatter plot - Number of Games Released per Year
+        fig_gyear = px.scatter(
+            games_per_year,
+            x='year_of_release',
+            y='game_count',
+            trendline='ols',   # add regression line,
+            color_discrete_sequence = ["#3f145f", "#55307a","#6b468e","#805ea3","#9a7bb7","#b49acb","#cbb3da" ],
+            labels={'year_of_release':'Year of Release', 'game_count':'Number of Games'},
+            template='plotly_white'
+        )
+
+
+        st.plotly_chart(fig_gyear, use_container_width=True)
+
+        st.divider()
+
   
         st.subheader("💰 Global Sales vs User Score")
 
