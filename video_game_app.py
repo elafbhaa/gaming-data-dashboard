@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# restyles the multiselect tags to look more polished, with gradient colors.
+
 st.markdown("""
 <style>
 
