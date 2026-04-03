@@ -1,4 +1,3 @@
-Video Game Sales Summary
 The Video Game Sales Dashboard offers an interactive way to explore and analyze global video game sales data.
 Users can filter by genre, Age rating, platform, user score, and release year to cover market trends and insights.
 
