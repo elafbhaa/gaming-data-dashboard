@@ -4,6 +4,7 @@ Users can filter by genre, Age rating, platform, user score, and release year to
 ✨ Dashboard Features:
 
 Overview Page, Dataset overview with key performance indicators (KPIs).
+
 Exploratory Data Analysis (EDA): Univariate, bivariate, and multivariate visualizations.
 Insights & Recommendations: Turning data into business success.
 
