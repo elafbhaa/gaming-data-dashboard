@@ -579,7 +579,7 @@ elif page == "Insights & Recommendations":
 - Sports games reach the highest sales peaks.
 - Action games are the global market leader and the most popular genre.
 - The 'Everyone' rating achieves the highest global sales, making it the most commercially successful category.
-- Nintendo consistently ranks as a top-selling publisher..
+- Nintendo consistently ranks as a top-selling publisher.
 - High scores don't always mean high sales.
 - Video game sales reached their peak between 2005 and 2015.
 - The PS2 platform led the world in both sales and releases, proving that players wanted a wide variety of games.
