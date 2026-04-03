@@ -341,22 +341,26 @@ elif page == "Analysis":
 
         st.divider()
 
-  
-        st.subheader("💰 Global Sales vs User Score")
+    
+        st.subheader("🎻 Global Sales Distribution by User Score")
 
-        fig_bi = px.scatter(
-            filtered_df,
-            x='user_score',
-            y='global_sales',
-            color='genre',
-            size='global_sales',
-            hover_data=['name'],labels={'genre':'Genre','user_score':'User Score','global_sales':'Total Global Sales (Millions)'}, 
-            color_discrete_sequence = ["#3f145f", "#55307a","#6b468e","#805ea3","#9a7bb7","#b49acb","#cbb3da" ],
-            trendline="ols",         
-            trendline_scope="overall" # Apply across all data, not per genre
-        )
+        fig_violin = px.violin(
+                filtered_df,
+                x="genre",              # categorical axis (e.g., genre)
+                y="global_sales",       # numeric axis
+                color="genre",          # color by genre
+                box=True,               # add embedded boxplot
+                points="all",           # show all individual points
+                hover_data=["name", "user_score"],  # extra info on hover
+                labels={
+                    "genre": "Genre",
+                    "global_sales": "Global Sales (Millions)"
+                },
+                color_discrete_sequence=["#3f145f", "#55307a", "#6b468e",
+                                        "#805ea3", "#9a7bb7", "#b49acb", "#cbb3da"]
+            )
 
-        st.plotly_chart(fig_bi, use_container_width=True)
+        st.plotly_chart(fig_violin, use_container_width=True)
 
         st.divider()
 
@@ -565,16 +569,22 @@ elif page == "Insights & Recommendations":
     st.markdown("""
 ### 🔍 Main Findings Insights
 
-- Action games dominate the global market with the highest global sales.
+- Sports game has the highest peak, reaching close to 80 million in global sales-confirming it as the most commercially dominant genre.
+- Action games dominate the global market with the Most Popular Genre.
+- Everyone rating reaches nearly 1200 million in global sales, making it the strongest genre- rating 
 - Nintendo publisher appear frequently among top-selling games.
-- Video game sales were highest during 2005–2015.
+- Higher scores alone do not guarantee increased sales.
+- Video game sales were highest during 2005-2015.
+- The PS2 platform dominated global sales and game releases during its peak years, reflecting strong consumer demand across diverse genres.
 ---
         
 ### 💡Business Recommendations
 
 - Focus development on Action & Sports games.  
+- publishers should prioritize Sports and Action under family-friendly ratings while balancing with other genres to build reputation and loyalty. 
 - Improve game quality to increase user scores.
 - Target high-performing years trends.
+- Publishers and developers can learn from the PS2 era by focusing on broad genre diversity and accessible pricing strategies (contributed to its succes).
 """)
 
 
