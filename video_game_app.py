@@ -582,7 +582,7 @@ elif page == "Insights & Recommendations":
 
 - Focus development on Action & Sports games (since they are the most popular).  
 - Focus on "family-friendly" ratings to reach the biggest audience possible. 
-- Quality First: Better games get better reviews to increase user scores.
+- Quality First, creating better games leads to higher review scores from players.
 - Target high-performing years trends (release your games during the busiest times of the year when people are buying the most).
 - Emulate the PS2 platform era's success by expanding game genres and adopting inclusive, budget-friendly pricing.
 
@@ -599,7 +599,7 @@ elif page == "Summary":
 
 
 The **Video Game Sales Dashboard** offers an interactive way to explore and analyze global video game sales data.  
-Users can filter by genre, Age rating, platform, user score, and release year to cover market trends and insights.
+Users can filter by Genre, Age rating, platform, User score, and Release year to cover market trends and insights.
 
 ---     
         
